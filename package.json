@@ -1,15 +1,46 @@
 {
+  "name": "portfolio-app",
+  "homepage": "https://dev-nut-creator.github.io/LiamCollins-portfolio/",
+  "version": "0.1.0",
+  "private": true,
+  "type":"module", 
   "dependencies": {
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^6.3.0",
     "react": "^19.3.0",
-    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.3.0",
-    "react-router": "^8.4.0",
-    "react-router-dom": "^7.18.4",
-    "react-scripts": "^0.0.0"
+    "web-vitals": "^2.1.4"
   },
-  "allowScripts": {
-    "core-js-pure@3.50.0": true,
-    "core-js@3.50.0": true
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.1"
   }
 }
