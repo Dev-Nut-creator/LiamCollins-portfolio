@@ -1,39 +1,6 @@
 
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 body
 {
@@ -126,20 +93,152 @@ hr.solid
 
 .SquareContainer
 {
-  position: relative;
-  background-color: rgb(97, 97, 100);
-  width: 1000px;
-  height: 400px;
-
+  position: fixed;
+  background-color: #1e293b;
+  width: 70%;
+  height: 90%;
   
-  left :var(--left,0px);
 
   display: flex;
+  justify-self: center;
+  bottom: 5%;
   z-index: 10;
   border-style:solid;
   border-radius :25px;
   border-color: rgb(70, 73, 76);
 }
+
+.SquareContainerHeader
+{
+  text-decoration: underline 3px solid #91a6be;
+  color :#91a6be;
+  position: relative;
+  left : 10px;
+}
+
+.SquareContainerDescription
+{
+
+  display: flex;
+  position: relative;
+  width :600px;
+  height : 700px;
+  border-radius: 15px;
+  top :300px;
+  right:200px;
+
+  
+}
+
+.DescriptionHeader
+{
+  display: flex;
+  color:#afb6cf;
+  text-decoration: underline;
+}
+.ProjectDescription
+{ 
+  display: flex;
+  color: #afb6cf;
+  position:relative;
+  top : 60px;
+  right : 170px;
+}
+
+.ProjectRolesHeader
+{
+  display: flex;
+  position: relative;
+  color:#afb6cf;
+  text-decoration: underline;
+
+  top : 200px;
+  right:444px;
+
+}
+
+.ProjectRoles
+{
+  position: relative;
+  top : 250px;
+  right : 500px;
+  color: #afb6cf;
+  
+}
+
+.ImageGalleryContainer
+{
+  display: flex;
+  position: relative;
+  width :800px;
+  height : 400px;
+
+  top :400px;
+  left:0px;
+  gap : 10px;
+}
+
+
+.GalleryImageRow
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.4px;
+
+}
+
+.GalleryImageColumn
+{
+  flex:25%;
+  flex-wrap: wrap;
+  padding:0.4px;
+  max-width: 25%;
+}
+
+.GalleryImageColumn img
+{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+
+
+.ProjectPageImageA
+{
+  display : flex;
+  width : 500px;
+  height : 400px;
+  border-radius: 10px;
+  position: relative;
+  right: 150px;
+}
+.ProjectPageImageB
+{
+  display : flex;
+  width : 500px;
+  height : 400px;
+  border-radius: 10px;
+  position: relative;
+  right : 100px;
+
+}
+
+
+
+.CloseButtonContainer
+{
+
+  width :100px;
+  height :20px;
+
+  position: relative;
+  left : 1400px;
+  top : 20px; 
+}
+
+
 
 .AboutMeButtonContainer
 {
@@ -403,8 +502,8 @@ details[open]::before {
 
 .ProjectButtonImage
 {
-  width :100%;
-  height :100%;
+  width :600px;
+  height :500px;
   display: block;
   object-fit: cover;
   

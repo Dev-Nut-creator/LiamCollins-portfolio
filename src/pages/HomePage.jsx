@@ -3,9 +3,21 @@ import linus from '../assets/Linus.png';
 import LinkedInLogo from '../assets/linkedin-logo.png';
 import GithubLogo from '../assets/GithubLogo.png';
 
+import CloseIcon from '../assets/closeicon.webp'
 
 import PulbereLogo from '../assets/PulbereLogo.png';
-import EngineImage from '../assets/C++Image.png';
+
+import pulbere1 from '../assets/pulbere-1.png';
+import pulbere2 from '../assets/pulbere-2.png';
+import pulbere3 from '../assets/pulbere-3.png';
+import pulbere4 from '../assets/pulbere-4.png';
+
+import placeholder from '../assets/placeholder.png';
+
+import EngineImage from '../assets/NuttyEngine-1.png';
+
+
+
 
 import './HomePage.css'
 
@@ -56,22 +68,58 @@ export function AboutMe()
 
 
 
-export function DES315()
+export function DES315({stateProp})
 {
  //open prject page
   return(
 
-  <>
-  
-  </>
+      <section className = 'SquareContainer'>
+        <h1 className='SquareContainerHeader'>PULBERE</h1>
+      
+          <section className = 'CloseButtonContainer'>
+            <Button className='button-81' name = ' close' func = {() =>stateProp(false)}/>
+          </section>
+            <section className='SquareContainerDescription'>
+                <h1 className='DescriptionHeader'> Description</h1>
+                <p className='ProjectDescription'>
+                    Pulbere is a fast-paced action game. You must fight through the evil lords
+                    minions while you also fight the loss of your own blood.Use your telikinetic powers to thwart those in your way.
+                </p>
+                <h2 className='ProjectRolesHeader'> Roles</h2>
+                <p className='ProjectRoles'>
+                  -Gameplay and Systems proggrammer
+                </p>
+
+            </section>    
+            <section className = 'ImageGalleryContainer'>
+                <Image className='ProjectPageImageA' resource={pulbere1}/>
+                <Image className='ProjectPageImageB' resource={pulbere2}/>
+
+            </section>
+
+    </section>
+
 );
 }
 
-export function NuttyEngine()
+export function NuttyEngine({stateProp})
 {
   return(
     <section className = 'SquareContainer'>
-    
+      <h1 className='SquareContainerHeader'>NuttyEngine</h1>
+          <section className = 'CloseButtonContainer'>
+            <Button className='button-81' name = ' close' func = {() =>stateProp(false)}/>
+          </section>
+            <section className='SquareContainerDescription'>
+                <h1> BlahBlahBlah</h1>
+
+            </section>    
+            <section className = 'ImageGalleryContainer'>
+                <Image className='ProjectPageImageA' resource={placeholder}/>
+                <Image className='ProjectPageImageB' resource={placeholder}/>
+
+            </section>
+
     </section>
 
   );
@@ -79,7 +127,7 @@ export function NuttyEngine()
 
 export function DownloadCV()
 {
-  
+  window.open("https://drive.google.com/file/d/16OmOXDd83p9suC3v3VhLH3w_sTL7X6bN/view?usp=drive_link","_blank","noopener,noreferrer");
 }
 
 export function AllProjects()
@@ -122,8 +170,8 @@ export default function HomePage()
 
   return(
         <div>
-          {EngineProjectOpen && <NuttyEngine/>}
-
+          {EngineProjectOpen && <NuttyEngine stateProp={ SetEngineProjectOpen}/>}
+          {DES315ProjectOpen && <DES315 stateProp = {SetDES315ProjectOpen}/>}
 
         <section className='ProjectGifSection'>
           {/* <Image className= 'ProjectGifContainer' resource={homer} altName='homer'/> */}
@@ -133,7 +181,7 @@ export default function HomePage()
         </section>
         {/* //render about me page if about me button clicked  */}
         <section className='AboutMeButtonContainer'>
-            <Button className =  "button-81" name = "About Me" func = {() => SetAboutMeOpen(!aboutMeOpen)}/> 
+            <Button className =  "button-81" name = "PROFILE" func = {() => SetAboutMeOpen(!aboutMeOpen)}/> 
         </section>
      
         {aboutMeOpen && <AboutMe/>}
