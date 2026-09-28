@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import NuttyEnginePage from './pages/project_NuttyEngine';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 
 
 import HomePage from './pages/HomePage';
