@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/LiamCollins.github.io/static/css/main.c2cd174a.css",
+    "main.js": "/LiamCollins.github.io/static/js/main.b6422a1f.js",
+    "static/js/535.e19b09ad.chunk.js": "/LiamCollins.github.io/static/js/535.e19b09ad.chunk.js",
+    "static/media/PulbereLogo.png": "/LiamCollins.github.io/static/media/PulbereLogo.076271d285ec3fd82e6f.png",
+    "static/media/C++Image.png": "/LiamCollins.github.io/static/media/C++Image.0d697f34acb106b2ac5b.png",
+    "static/media/Linus.png": "/LiamCollins.github.io/static/media/Linus.d79f3448b1597728a905.png",
+    "static/media/linkedin-logo.png": "/LiamCollins.github.io/static/media/linkedin-logo.d29971586505172dfd00.png",
+    "index.html": "/LiamCollins.github.io/index.html",
+    "main.c2cd174a.css.map": "/LiamCollins.github.io/static/css/main.c2cd174a.css.map",
+    "main.b6422a1f.js.map": "/LiamCollins.github.io/static/js/main.b6422a1f.js.map",
+    "535.e19b09ad.chunk.js.map": "/LiamCollins.github.io/static/js/535.e19b09ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cd174a.css",
+    "static/js/main.b6422a1f.js"
+  ]
+}
