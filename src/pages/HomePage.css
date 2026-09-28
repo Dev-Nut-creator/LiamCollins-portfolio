@@ -124,7 +124,7 @@ hr.solid
   }
 }
 
-/* .SquareContainer
+.SquareContainer
 {
   position: relative;
   background-color: rgb(97, 97, 100);
@@ -139,7 +139,7 @@ hr.solid
   border-style:solid;
   border-radius :25px;
   border-color: rgb(70, 73, 76);
-} */
+}
 
 .AboutMeButtonContainer
 {
