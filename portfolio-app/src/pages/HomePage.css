@@ -1,0 +1,484 @@
+
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+body
+{
+  /* background-color: #0a0a12; */
+  background-color: #0a0a12;
+
+}
+
+hr.solid
+{
+  position: relative;
+  border-top: 1px solid #91a6be;
+  border-bottom: 1px solid #91a6be;
+  
+  bottom: 140px;
+  margin: 10px 600px; 
+}
+
+
+.ProfileSection {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  position :relative;
+  bottom :150px;
+}
+.ProfileContainer
+{
+  border-style: solid;
+  border-color: #91a6be;
+  border-radius: 150px;
+
+
+  width: 300px;
+  height:300px;
+}
+
+
+.ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.AboutMeSection /*when about me page is opend it will apply these styles*/
+{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  background-color: #91a6be;
+  position: relative;
+  height : 400px;
+  width : 1000px;
+  bottom :135px;
+  margin: 0 auto;  
+  border-radius: 25px;
+  animation : aboutMeAnim 0.8s ease-out forwards ;
+  flex-shrink: 1;
+  
+}
+
+.fadeInText
+{
+  margin:30px 10px;
+  text-align: center;
+  animation-delay: 0.3s;
+  animation: FadeIn 0.5s ease-out forwards;
+}
+
+
+
+@keyframes aboutMeAnim {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 400px;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* .SquareContainer
+{
+  position: relative;
+  background-color: rgb(97, 97, 100);
+  width: 1000px;
+  height: 400px;
+
+  
+  left :var(--left,0px);
+
+  display: flex;
+  z-index: 10;
+  border-style:solid;
+  border-radius :25px;
+  border-color: rgb(70, 73, 76);
+} */
+
+.AboutMeButtonContainer
+{
+  text-align: center;
+  position :relative;
+  bottom :140px;
+}
+
+
+
+
+/* <button class="button-81" role="button">Button 81</button> */
+/* https://getcssscan.com/css-buttons-examples */
+/* CSS */
+.button-81 {
+  background-color:  #1e293b;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #dee2ef;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-81:hover {
+  background-color:#afb6cf;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+
+.ProjectGifSection
+{
+  width:100%;
+  height :500px;
+  overflow: hidden;
+  display: flex;
+  border-bottom: 3px solid #afb6cf;
+  background-color: #afb6cf;
+}
+
+/* .ProjectGifContainer
+{
+  background-color: #afb6cf;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height :100%;
+
+
+
+} */
+
+
+
+/* https://prismic.io/blog/css-menus #13 -  CSS Hamburger Menu */
+details {
+  margin: 0px;
+}
+summary {
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding: 12px 10px;
+  width: 23px;
+  height: 17px;
+  background-color: #1e293b;
+  border: 2px solid #afb6cf;
+  border-radius: 5px;
+  color: #afb6cf;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
+}
+summary::before,
+summary::after {
+  position: static;
+  top: 0px;
+  left: 0;
+}
+summary::before {
+  content: "";
+}
+summary::after {
+  content: "III";
+  letter-spacing: -1px;
+}
+summary:hover {
+  transform: scale(1.1);
+}
+summary::marker {
+  font-size: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .menu {
+  animation-name: menuAnim;
+}
+details[open] summary::before {
+  content: "X";
+}
+details[open] summary::after {
+  content: "";
+}
+.menu {
+  height: 0;
+  width: fit-content;
+  border-color: #afb6cf;
+  border-radius: 5px;
+  background-color: #1e293b;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: closeMenu 300ms ease-in-out forwards;
+  border-style: solid;
+  border-radius: 25px;
+  position: relative;
+  right: 100px;
+  
+}
+.menu a {
+  padding: 12px 24px;
+  margin: 0 16px;
+  color: grey;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: filter 200ms linear 0s;
+}
+.menu a:nth-of-type(1) {
+  padding-top: 24px;
+}
+.menu a:nth-last-of-type(1) {
+  border-bottom: none;
+  padding-bottom: 60px;
+}
+.menu a:hover {
+  filter: brightness(200%);
+}
+details::before {
+  color: #afb6cf;
+  position: absolute;
+  margin-left: 50px;
+  padding: 10px 10px;
+}
+details[open]::before {
+  animation: fadeMe 300ms linear forwards;
+}
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 125px;
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.NavBarSection
+{
+  position: fixed;
+  top : 25px;
+  display: flex;
+  left:95%;
+  color: #91a6be;
+
+
+}
+
+.NameDisplay
+{
+  position: relative;
+  bottom : 5px;
+
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline 4px; */
+
+}
+
+.NameDisplaySection
+{
+  background-color: #0d172a;
+  color:#91a6be;
+  display: flex;
+  position :fixed;
+  top:10px;
+  left :10px;
+  
+  padding: 0px 15px;
+
+
+  border-radius: 10px;
+  border-style: solid;
+
+
+}
+
+.NavBarButton
+{
+  background-color: black;
+  color : rgb(248, 245, 245);
+  cursor: pointer;
+  border-radius: 25px;
+  font-style :normal; 
+  font-family :'Courier New', Courier, monospace;
+  bottom: 150px;
+  width: 100px;
+}
+
+
+
+
+.ProjectSection
+{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  position : relative;
+  gap :10px;
+  bottom : 130px;
+}
+
+.ProjectButtonImage
+{
+  width :100%;
+  height :100%;
+  display: block;
+  object-fit: cover;
+  
+}
+
+.button-81:has(.ProjectButtonImage)
+{
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ProjectButtonText
+{
+  bottom:40px;
+
+  font-style :normal; 
+  font-family :'Courier New', Courier, monospace;
+}
+
+
+
+
+
+.NuttyEngineProject
+{
+  background-color: black;
+  color : rgb(248, 245, 245);
+  cursor: pointer;
+  border-radius: 25px;
+
+  align-items: center;
+  justify-content: center;
+  gap :8px;
+}
+
+.SiteButtonsContainer
+{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  position : fixed;
+  gap :20px;
+  top :90%;
+  left: 1%;
+
+}
+
+.SocialsImageButton
+{
+  color : rgb(248, 245, 245);
+  cursor: pointer;
+  display: block;
+  object-fit: cover;
+
+  position: relative;
+  width :70px;
+  top :10px;
+  
+}
+
+.button-81:has(.SocialsImageButton)
+{
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.DES315Project
+{
+  background-color: black;
+  color : rgb(248, 245, 245);
+  cursor: pointer;
+  border-radius: 25px;
+
+}
+

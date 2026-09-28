@@ -4,7 +4,9 @@
     "react": "^19.3.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.3.0",
-    "react-scripts": "^5.0.1"
+    "react-router": "^8.4.0",
+    "react-router-dom": "^7.18.4",
+    "react-scripts": "^0.0.0"
   },
   "allowScripts": {
     "core-js-pure@3.50.0": true,
