@@ -57,7 +57,10 @@ export function AboutMe()
     <section className='AboutMeSection'>
         {/* create the container for the about me section*/}
         <p className = 'fadeInText'>
-          lorem ipsum dolor sit amet consectetur adipiscing elit est fuga cillum id nulla cumque ea enim illum culpa ipsum ut eiusmod vero in animi voluptas est laborum quibusdam cumque dolor mollitia et facere non at voluptas ut voluptatum cillum blanditiis omnis dolorum minus qui deleniti cupidatat velit et ducimus officia
+          Passionate about Engine Systems/tools programming and looking for a role that can give me an oportunity to challenge myself and explore the intricate and complex functionality of game engines. 
+          My work aims to focus on developement areas tied to gameplay or physics systems but can expand to rendering with 
+          emphasis on the lower level implementations that can be made to improve or add features. 
+          I want to be able to create elegant and accessible solutions for other developers to ease developement proccesses and expand my own understanding of existing frameworks to continue to develop on my own.
         </p>
         
     </section>
