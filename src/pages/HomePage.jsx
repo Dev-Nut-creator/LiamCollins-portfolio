@@ -79,7 +79,7 @@ export function DES315({stateProp})
           <section className = 'CloseButtonContainer'>
             <Button className='button-81' name = ' close' func = {() =>stateProp(false)}/>
           </section>
-            <section className='SquareContainerDescription'>
+            <section className='TextSection'>
                 <h1 className='DescriptionHeader'> Description</h1>
                 <p className='ProjectDescription'>
                     Pulbere is a fast-paced action game. You must fight through the evil lords
@@ -91,11 +91,11 @@ export function DES315({stateProp})
                 </p>
 
             </section>    
-            <section className = 'ImageGalleryContainer'>
+            {/* <section className = 'ImageGalleryContainer'>
                 <Image className='ProjectPageImageA' resource={pulbere1}/>
                 <Image className='ProjectPageImageB' resource={pulbere2}/>
-
-            </section>
+            </section> */}
+          {/* </section> */}
 
     </section>
 
