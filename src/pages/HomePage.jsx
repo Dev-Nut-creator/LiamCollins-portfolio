@@ -15,9 +15,11 @@ import placeholder from '../assets/placeholder.png';
 
 import EngineImage from '../assets/NuttyEngine-1.png';
 
+import GreedyCells from '../assets/GreedyCells.png';
+import GreedyCells2 from '../assets/GreedyCells-2.png';
+import GreedyCells3 from '../assets/GreedyCells-3.png';
 
-
-import './HomePage.css'
+import './HomePage.css';
 
 import { useState, useEffect  } from 'react';
 
@@ -226,10 +228,9 @@ export function GREEDYCELLS({stateProp})
             </section>
             <section className='ImageSection'>
               <section className='ImageSectionGrid'>
-                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
-                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
-                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
-                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={GreedyCells2}></Image>
+                  <Image className = 'ImageSectionImage' resource={GreedyCells3}></Image>
+
               </section>
               {/* <video className = 'ProjectVideo' controls>
                 <source src = {pulbereVideo} type = 'video/mp4'/>
@@ -335,7 +336,7 @@ export default function HomePage()
           {/* create buttons that hold a gif to each project and each of their own sections for showing text*/}
           <ImageButton className='button-81' name = 'NUTTY-ENGINE' func = {() =>SetEngineProjectOpen(!EngineProjectOpen)} image={EngineImage} imageClassName='ProjectButtonImage' alt = 'NuttyEngine'/>
           <ImageButton className='button-81' name = 'PULBERE' func = {() =>SetDES315ProjectOpen(!DES315ProjectOpen)} image={PulbereLogo} imageClassName='ProjectButtonImage' alt = 'DES315' />
-          <ImageButton className='button-81' name = 'GREEDY CELLS' func = {() =>SetGreedyCellsProjectOpen(!GreedyCellsOpen)} image={placeholder} imageClassName='ProjectButtonImage' alt = 'GreedyCells' />
+          <ImageButton className='button-81' name = 'GREEDY CELLS' func = {() =>SetGreedyCellsProjectOpen(!GreedyCellsOpen)} image={GreedyCells} imageClassName='ProjectButtonImage' alt = 'GreedyCells' />
           <ImageButton className='button-81' name = 'DALEK SURVIVOR' func = {() =>SetDalekSurvivorProjectOpen(!DalekSurvivorOpen)} image={placeholder} imageClassName='ProjectButtonImage' alt = 'DalekSurvivor' />
         </section>
         

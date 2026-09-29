@@ -240,10 +240,13 @@ hr.solid
 
 .ProjectVideo
 {
-  width :45vw;
+  width :40vw;
   height :40vh;
   position: relative;
-  right : 0vw;
+  left :2.5vw;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #91a6be;
 
 }
 
@@ -271,13 +274,17 @@ hr.solid
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap :10px;
+
   justify-content: center;
-  align-content: center;
+  align-items: center;
   
   position: relative;
   width: 15vw;
+  height: 70vh;
+
   left: 15vw;
   margin: 5px;
+
 
 }
 
@@ -286,6 +293,9 @@ hr.solid
   width :20vw;
   height :25vh;
   border-radius: 30px;
+  border-style: solid;
+  border-color: #91a6be;
+
 }
 
 /* .ImageGalleryContainer
