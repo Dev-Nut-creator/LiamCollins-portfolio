@@ -14,10 +14,11 @@ hr.solid
   border-bottom: 1px solid #91a6be;
 
   justify-self: center;
+  align-self: center;
   width :50vw;
 
   bottom: 140px;
-  margin: 10px 600px;
+  margin: 10px;
 }
 
 
