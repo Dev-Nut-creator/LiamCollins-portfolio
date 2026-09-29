@@ -1,7 +1,4 @@
 
-
-
-
 body
 {
   /* background-color: #0a0a12; */
@@ -9,11 +6,17 @@ body
 
 }
 
+
+
 hr.solid
 {
+  display: flex;
   position: relative;
   border-top: 1px solid #91a6be;
   border-bottom: 1px solid #91a6be;
+
+  justify-self: center;
+  width :50vw;
 
   bottom: 140px;
   margin: 10px 600px;
@@ -23,7 +26,6 @@ hr.solid
 .ProfileSection {
   text-align: center;
   justify-content: center;
-  display: flex;
   position :relative;
   bottom :150px;
 }
@@ -36,6 +38,9 @@ hr.solid
 
   width: 300px;
   height:300px;
+
+  /* width : clamp(300px, 3vw,600px);
+  height :clamp(300px,3vh,600px); */
 }
 
 
@@ -53,8 +58,11 @@ hr.solid
   justify-content: center; /* Centers horizontally */
   background-color: #91a6be;
   position: relative;
-  height : 400px;
-  width : 1000px;
+  /* height : 400px;
+  width : 1000px; */
+
+  height :40vh;
+  width: 80vw;
   bottom :135px;
   margin: 0 auto;
   border-radius: 25px;
@@ -70,6 +78,7 @@ hr.solid
   animation-delay: 0.3s;
   animation: FadeIn 0.5s ease-out forwards;
 }
+
 
 
 
@@ -106,10 +115,10 @@ hr.solid
   width :100%;
   
   justify-self: center;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
-  flex-direction: column;
+  flex-direction: row;
   
   top: 5%;
 
@@ -122,16 +131,16 @@ hr.solid
 
 .SquareContainerHeader
 {  
-  display: flex;
-  justify-content: center; 
-  align-items: center;            
+  justify-content: flex-start; 
+
   padding: 15px;
-  
+  margin : 10px 5px;
   color :#91a6be;
 
-  position: relative;
-  bottom :45%;
-  right:40%;
+  position:inherit;
+  top:7vh;  
+  
+  
 }
 
 .SquareContainerDescription
@@ -144,25 +153,28 @@ hr.solid
 
 .TextSection
 {
-  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 
   justify-content: left;
   align-content: center;
   align-self: center;
   position: inherit;
   
-  width:100%;
-  height:100%;
+  width:30vw;
+  height:80vh;
 
-  max-width: 800px;
-  max-height: 500px;
+  max-width: 30vw;
+  max-height: 75vh;
 
   min-width: 0;
   min-height: 0;
 
-  left: 15%;
-  top : 20%;
-  margin :10px;
+  left: 12vw;
+  top : 14vh;
+
+  margin: 5px;
+  /* background-color: white; */
 
   overflow-y: auto;
   
@@ -174,28 +186,114 @@ hr.solid
   color:#afb6cf;
   text-decoration: underline;
   position: relative;
+  font-size: clamp(10px,4vw,40px);
+  margin: 0px 0px;
+
 }
 .ProjectDescription
 {
   color: #afb6cf;
   position:relative;
-}
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-justify: auto;
+  margin: 0px 0px;
+  width:100%;
+  font-size: clamp(10px,3vw,20px);
 
-.ProjectRolesHeader
-{
-  position: relative;
-  color:#afb6cf;
-  text-decoration: underline;
 }
 
 .ProjectRoles
 {
   position: relative;
   color: #afb6cf;
+  font-size: clamp(10px,3vw,20px);
+  margin: 0px 0px;
+}
+
+
+.ProjectRolesHeader
+{
+  position: relative;
+  color:#afb6cf;
+  text-decoration: underline;
+  font-size: clamp(10px,5vw,30px);
+}
+
+.SpecificTasksInRole
+{
+  position: relative;
+  color: #afb6cf;
+  font-size: clamp(10px,3vw,20px);
+  margin: 0px 0px;
+
+  list-style-type: circle;
+  list-style-position: outside;
+  right :0.5vw;
+}
+
+.SpecificTasksInRoleHeader
+{
+
+  position: relative;
+  color:#afb6cf;
+  text-decoration: underline;
+  font-size: clamp(10px,5vw,30px);
 
 }
 
-.ImageGalleryContainer
+.ProjectVideo
+{
+  width :45vw;
+  height :40vh;
+  position: relative;
+  right : 0vw;
+
+}
+
+.ImageSection
+{
+  /* background-color: white; */
+  position: inherit;
+
+  width: 100%;
+  height:100%;
+
+  max-width: 45vw;
+  max-height: 75vh;
+  left :42vw;
+  top :14vh;
+  margin :5px;
+
+ 
+  overflow-y: auto;
+
+}
+
+.ImageSectionGrid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap :10px;
+  justify-content: center;
+  align-content: center;
+  
+  position: relative;
+  width: 15vw;
+  left: 15vw;
+  margin: 5px;
+
+}
+
+.ImageSectionImage
+{ 
+  width :20vw;
+  height :25vh;
+  border-radius: 30px;
+}
+
+/* .ImageGalleryContainer
 {
   display: flex;
   position: relative;
@@ -230,13 +328,8 @@ hr.solid
   vertical-align: middle;
   width: 100%;
 
-}
+} */
 
-.ImageSection
-{
-  
-
-}
 
 
 .ProjectPageImageA
@@ -533,8 +626,8 @@ details[open]::before {
 
 .ProjectButtonImage
 {
-  width :600px;
-  height :500px;
+  width :25vw;
+  height :30vh;
   display: block;
   object-fit: cover;
 

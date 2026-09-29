@@ -1,9 +1,6 @@
-// import logo from './logo.svg';
-import linus from '../assets/Linus.png';
 import LinkedInLogo from '../assets/linkedin-logo.png';
 import GithubLogo from '../assets/GithubLogo.png';
 
-import CloseIcon from '../assets/closeicon.webp'
 
 import PulbereLogo from '../assets/PulbereLogo.png';
 
@@ -12,10 +9,11 @@ import pulbere2 from '../assets/pulbere-2.png';
 import pulbere3 from '../assets/pulbere-3.png';
 import pulbere4 from '../assets/pulbere-4.png';
 
+import pulbereVideo from '../assets/pulbere-video.mp4';
+
 import placeholder from '../assets/placeholder.png';
 
 import EngineImage from '../assets/NuttyEngine-1.png';
-
 
 
 
@@ -82,21 +80,38 @@ export function DES315({stateProp})
             <section className='TextSection'>
                 <h1 className='DescriptionHeader'> Description</h1>
                 <p className='ProjectDescription'>
-                    Pulbere is a fast-paced action game. You must fight through the evil lords
-                    minions while you also fight the loss of your own blood.Use your telikinetic powers to thwart those in your way.
+                    Pulbere is a fast-paced action game where you must fight through the evil lords
+                    minions while you fight the loss of your own blood. Use your telikinetic powers to thwart those in your way.
+
+                    Produced in Unreal Engine 5 using both C++ and Blueprint within an 8 person team;
                 </p>
-                <h2 className='ProjectRolesHeader'> Roles</h2>
+                <h2 className='ProjectRolesHeader'> Role</h2>
                 <p className='ProjectRoles'>
-                  -Gameplay and Systems proggrammer
+                  - Gameplay and Systems programmer
                 </p>
+                <h2 className = 'SpecificTasksInRoleHeader'>Specific Tasks</h2>
+                <ul className = 'SpecificTasksInRole'>
+                  <li>Contributed to developement of the Enemy AI system using Unreal Engine 5's AI-State Trees.</li> 
+                  <li>Produced early implementation of the projectile system for managing objects that can be effected by telikenesis.</li>
+                  <li>Added implementations for managing game state and communications between different systems</li>
+                  <li>Performance profiling using Unreal Engines built in profiling tools</li>
+                  <li>Implemented the player actor class and associated mechanics such as biting , dashing, grappling and blood drain.</li>
+                  <li>Implemented provided art assets for animations using Unreal Engines IK-rigs and animation blueprinting tools.</li>
 
+
+                </ul>
+            </section>
+            <section className='ImageSection'>
+              <section className='ImageSectionGrid'>
+                  <Image className = 'ImageSectionImage' resource={pulbere1}></Image>
+                  <Image className = 'ImageSectionImage' resource={pulbere2}></Image>
+                  <Image className = 'ImageSectionImage' resource={pulbere3}></Image>
+                  <Image className = 'ImageSectionImage' resource={pulbere4}></Image>
+              </section>
+              <video className = 'ProjectVideo' controls>
+                <source src = {pulbereVideo} type = 'video/mp4'/>
+              </video>
             </section>    
-            {/* <section className = 'ImageGalleryContainer'>
-                <Image className='ProjectPageImageA' resource={pulbere1}/>
-                <Image className='ProjectPageImageB' resource={pulbere2}/>
-            </section> */}
-          {/* </section> */}
-
     </section>
 
 );
@@ -105,25 +120,128 @@ export function DES315({stateProp})
 export function NuttyEngine({stateProp})
 {
   return(
-    <section className = 'SquareContainer'>
-      <h1 className='SquareContainerHeader'>NuttyEngine</h1>
+      <section className = 'SquareContainer'>
+        <h1 className='SquareContainerHeader'>NUTTY ENGINE</h1>
+      
           <section className = 'CloseButtonContainer'>
             <Button className='button-81' name = ' close' func = {() =>stateProp(false)}/>
           </section>
-            <section className='SquareContainerDescription'>
-                <h1> BlahBlahBlah</h1>
+            <section className='TextSection'>
+                <h1 className='DescriptionHeader'> Description</h1>
+                <p className='ProjectDescription'>
+                   
+                </p>
+                <h2 className='ProjectRolesHeader'> Role</h2>
+                <p className='ProjectRoles'>
+            
+                </p>
+                <h2 className = 'SpecificTasksInRoleHeader'>Specific Tasks</h2>
+                <ul className = 'SpecificTasksInRole'>
+       
 
-            </section>    
-            <section className = 'ImageGalleryContainer'>
-                <Image className='ProjectPageImageA' resource={placeholder}/>
-                <Image className='ProjectPageImageB' resource={placeholder}/>
-
+                </ul>
             </section>
+            <section className='ImageSection'>
+              <section className='ImageSectionGrid'>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+              </section>
+              {/* <video className = 'ProjectVideo' controls>
+                <source src = {pulbereVideo} type = 'video/mp4'/>
+              </video> */}
+            </section>    
+    </section>
 
+
+  );
+}
+
+export function DALEKSURVIVOR({stateProp})
+{
+
+  return(
+    <section className = 'SquareContainer'>
+        <h1 className='SquareContainerHeader'>DALEK SURVIVOR</h1>
+      
+          <section className = 'CloseButtonContainer'>
+            <Button className='button-81' name = ' close' func = {() =>stateProp(false)}/>
+          </section>
+            <section className='TextSection'>
+                <h1 className='DescriptionHeader'> Description</h1>
+                <p className='ProjectDescription'>
+                   
+                </p>
+                <h2 className='ProjectRolesHeader'> Role</h2>
+                <p className='ProjectRoles'>
+            
+                </p>
+                <h2 className = 'SpecificTasksInRoleHeader'>Specific Tasks</h2>
+                <ul className = 'SpecificTasksInRole'>
+       
+
+                </ul>
+            </section>
+            <section className='ImageSection'>
+              <section className='ImageSectionGrid'>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+              </section>
+              {/* <video className = 'ProjectVideo' controls>
+                <source src = {pulbereVideo} type = 'video/mp4'/>
+              </video> */}
+            </section>    
     </section>
 
   );
 }
+
+export function GREEDYCELLS({stateProp})
+{
+
+  return(
+            <section className = 'SquareContainer'>
+        <h1 className='SquareContainerHeader'>GREEDY CELLS</h1>
+      
+          <section className = 'CloseButtonContainer'>
+            <Button className='button-81' name = ' close' func = {() =>stateProp(false)}/>
+          </section>
+            <section className='TextSection'>
+                <h1 className='DescriptionHeader'> Description</h1>
+                <p className='ProjectDescription'>
+                   
+                </p>
+                <h2 className='ProjectRolesHeader'> Role</h2>
+                <p className='ProjectRoles'>
+            
+                </p>
+                <h2 className = 'SpecificTasksInRoleHeader'>Specific Tasks</h2>
+                <ul className = 'SpecificTasksInRole'>
+       
+
+                </ul>
+            </section>
+            <section className='ImageSection'>
+              <section className='ImageSectionGrid'>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+                  <Image className = 'ImageSectionImage' resource={placeholder}></Image>
+              </section>
+              {/* <video className = 'ProjectVideo' controls>
+                <source src = {pulbereVideo} type = 'video/mp4'/>
+              </video> */}
+            </section>    
+    </section>
+
+  );
+}
+
+
+
 
 export function DownloadCV()
 {
@@ -164,6 +282,9 @@ export default function HomePage()
   const [aboutMeOpen, SetAboutMeOpen] = useState(false);
   const [EngineProjectOpen, SetEngineProjectOpen] = useState(false);
   const [DES315ProjectOpen, SetDES315ProjectOpen] = useState(false);
+  const [GreedyCellsOpen, SetGreedyCellsProjectOpen] = useState(false);
+  const [DalekSurvivorOpen, SetDalekSurvivorProjectOpen] = useState(false);
+
 
   // const navigate = useNavigate();
 
@@ -172,12 +293,14 @@ export default function HomePage()
         <div>
           {EngineProjectOpen && <NuttyEngine stateProp={ SetEngineProjectOpen}/>}
           {DES315ProjectOpen && <DES315 stateProp = {SetDES315ProjectOpen}/>}
+          {GreedyCellsOpen && <GREEDYCELLS stateProp={SetGreedyCellsProjectOpen}/>}
+          {DalekSurvivorOpen && <DALEKSURVIVOR stateProp={SetDalekSurvivorProjectOpen}/>}
 
         <section className='ProjectGifSection'>
-          {/* <Image className= 'ProjectGifContainer' resource={homer} altName='homer'/> */}
+          {/* <Image className= 'ProjectGifContainer' resource={background} altName='background'/> */}
         </section>
         <section className='ProfileSection'>
-          <Image className = 'ProfileContainer' resource = {linus} altName = 'Linus'/>      
+          <Image className = 'ProfileContainer' resource = {placeholder} altName = 'me'/>      
         </section>
         {/* //render about me page if about me button clicked  */}
         <section className='AboutMeButtonContainer'>
@@ -205,8 +328,9 @@ export default function HomePage()
         <section className='ProjectSection'>
           {/* create buttons that hold a gif to each project and each of their own sections for showing text*/}
           <ImageButton className='button-81' name = 'NUTTY-ENGINE' func = {() =>SetEngineProjectOpen(!EngineProjectOpen)} image={EngineImage} imageClassName='ProjectButtonImage' alt = 'NuttyEngine'/>
-          
           <ImageButton className='button-81' name = 'PULBERE' func = {() =>SetDES315ProjectOpen(!DES315ProjectOpen)} image={PulbereLogo} imageClassName='ProjectButtonImage' alt = 'DES315' />
+          <ImageButton className='button-81' name = 'GREEDY CELLS' func = {() =>SetGreedyCellsProjectOpen(!GreedyCellsOpen)} image={placeholder} imageClassName='ProjectButtonImage' alt = 'GreedyCells' />
+          <ImageButton className='button-81' name = 'DALEK SURVIVOR' func = {() =>SetDalekSurvivorProjectOpen(!DalekSurvivorOpen)} image={placeholder} imageClassName='ProjectButtonImage' alt = 'DalekSurvivor' />
         </section>
         
         <section className = 'SiteButtonsContainer'>
