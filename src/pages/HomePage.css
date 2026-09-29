@@ -6,8 +6,6 @@ body
 
 }
 
-
-
 hr.solid
 {
   display: flex;
@@ -104,22 +102,21 @@ hr.solid
 {
   position: fixed;
   background-color: #1e293b;
-  /* width: 70%;
-  height: 90%; */
+
   display: flex;
 
 
   height:90vh;
   width :80vw;
   
-  justify-self: center;
+
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
   flex-direction: row;
   
   top: 5%;
-
+  left: 10%;
   z-index: 3;
   
   border-style:solid;
