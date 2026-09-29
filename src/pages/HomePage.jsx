@@ -291,6 +291,12 @@ export default function HomePage()
 
   return(
         <div>
+        <section className = 'SiteButtonsContainer'>
+           <ImageButton className='button-81' name = '' func = {() =>OpenLinkedInPage()} image = {LinkedInLogo} imageClassName='SocialsImageButton' alt = 'LinkedIn'/>
+            <ImageButton className='button-81' name = '' func = {() =>OpenGithubPage()} image = {GithubLogo} imageClassName='SocialsImageButton' alt = 'Github'/>
+        </section>
+
+
           {EngineProjectOpen && <NuttyEngine stateProp={ SetEngineProjectOpen}/>}
           {DES315ProjectOpen && <DES315 stateProp = {SetDES315ProjectOpen}/>}
           {GreedyCellsOpen && <GREEDYCELLS stateProp={SetGreedyCellsProjectOpen}/>}
@@ -333,10 +339,7 @@ export default function HomePage()
           <ImageButton className='button-81' name = 'DALEK SURVIVOR' func = {() =>SetDalekSurvivorProjectOpen(!DalekSurvivorOpen)} image={placeholder} imageClassName='ProjectButtonImage' alt = 'DalekSurvivor' />
         </section>
         
-        <section className = 'SiteButtonsContainer'>
-           <ImageButton className='button-81' name = '' func = {() =>OpenLinkedInPage()} image = {LinkedInLogo} imageClassName='SocialsImageButton' alt = 'LinkedIn'/>
-            <ImageButton className='button-81' name = '' func = {() =>OpenGithubPage()} image = {GithubLogo} imageClassName='SocialsImageButton' alt = 'Github'/>
-        </section>
+  
     </div>
   );
 
