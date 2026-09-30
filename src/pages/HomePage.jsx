@@ -92,9 +92,14 @@ export function DES315({stateProp})
                     Produced in Unreal Engine 5 using both C++ and Blueprint within an 8 person team;
                 </p>
                 <h2 className='ProjectRolesHeader'> Role</h2>
-                <p className='ProjectRoles'>
+                {/* <p className='ProjectRoles'>
                   - Gameplay and Systems programmer
-                </p>
+                </p> */}
+                <ul className='ProjectRoles'>
+                    <li>Gameplay and Systems programmer</li>
+                    <li>Source Control Management</li>
+
+                </ul>
                 <h2 className = 'SpecificTasksInRoleHeader'>Specific Tasks</h2>
                 <ul className = 'SpecificTasksInRole'>
                   <li>Contributed to developement of the Enemy AI system using Unreal Engine 5's AI-State Trees.</li> 
