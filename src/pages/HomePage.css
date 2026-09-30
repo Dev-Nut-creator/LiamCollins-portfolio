@@ -647,6 +647,17 @@ details[open]::before {
   cursor: pointer;
 }
 
+.ProjectButtonSubTextContainer
+{
+  display: flex;
+  font-size: small;
+  justify-content: center;
+
+  position: relative;
+  bottom : 1vh;
+}
+
+
 .ProjectButtonText
 {
   bottom:40px;

@@ -29,13 +29,14 @@ export function Button({name, func, className})
   return <button className={className} onClick= {func}>{name}</button>
 }
 
-export function ImageButton({name,func,className,imageClassName,image,alt})
+export function ImageButton({name,func,className,imageClassName,image,alt , subText})
 {
   return( 
     <div>
     <button className={className} onClick= {func}>
       <img className={imageClassName} src = {image} alt= {alt} ></img>
       <p className='ProjectButtonText'>{name}</p>
+      <p className = 'ProjectButtonSubTextContainer'>{subText}</p>
     </button>
     </div>
   );
@@ -337,10 +338,10 @@ export default function HomePage()
 
         <section className='ProjectSection'>
           {/* create buttons that hold a gif to each project and each of their own sections for showing text*/}
-          <ImageButton className='button-81' name = 'NUTTY-ENGINE' func = {() =>SetEngineProjectOpen(!EngineProjectOpen)} image={EngineImage} imageClassName='ProjectButtonImage' alt = 'NuttyEngine'/>
-          <ImageButton className='button-81' name = 'PULBERE' func = {() =>SetDES315ProjectOpen(!DES315ProjectOpen)} image={PulbereLogo} imageClassName='ProjectButtonImage' alt = 'DES315' />
-          <ImageButton className='button-81' name = 'GREEDY CELLS' func = {() =>SetGreedyCellsProjectOpen(!GreedyCellsOpen)} image={GreedyCells} imageClassName='ProjectButtonImage' alt = 'GreedyCells' />
-          <ImageButton className='button-81' name = 'DALEK SURVIVOR' func = {() =>SetDalekSurvivorProjectOpen(!DalekSurvivorOpen)} image={placeholder} imageClassName='ProjectButtonImage' alt = 'DalekSurvivor' />
+          <ImageButton className='button-81' name = 'NUTTY-ENGINE' subText= 'High-Performance C++ Game Engine' func = {() =>SetEngineProjectOpen(!EngineProjectOpen)} image={EngineImage} imageClassName='ProjectButtonImage' alt = 'NuttyEngine'/>
+          <ImageButton className='button-81' name = 'PULBERE' subText= 'Fast-Paced Action Game Built in UE5' func = {() =>SetDES315ProjectOpen(!DES315ProjectOpen)} image={PulbereLogo} imageClassName='ProjectButtonImage' alt = 'DES315' />
+          <ImageButton className='button-81' name = 'GREEDY CELLS' subText= '2D Tower-Defense Game Built in SFML C++' func = {() =>SetGreedyCellsProjectOpen(!GreedyCellsOpen)} image={GreedyCells} imageClassName='ProjectButtonImage' alt = 'GreedyCells' />
+          <ImageButton className='button-81' name = 'DALEK SURVIVOR' subText= '3D Wave Based Survival Game Built for PS5'func = {() =>SetDalekSurvivorProjectOpen(!DalekSurvivorOpen)} image={placeholder} imageClassName='ProjectButtonImage' alt = 'DalekSurvivor' />
         </section>
         
   
