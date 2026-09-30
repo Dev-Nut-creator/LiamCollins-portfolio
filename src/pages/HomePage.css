@@ -60,19 +60,19 @@ hr.solid
   /* height : 400px;
   width : 1000px; */
 
-  height :10vh;
+  height :22vh;
   width: 50vw;
   bottom :135px;
   margin: 0 auto;
   border-radius: 25px;
   animation : aboutMeAnim 0.8s ease-out forwards ;
-  flex-shrink: 1;
 
 }
 
 .fadeInText
 {
-  margin:30px 10px;
+  position: relative;
+  margin:2vh 2vw;
   text-align: center;
   animation-delay: 0.3s;
   animation: FadeIn 0.5s ease-out forwards;
@@ -86,7 +86,7 @@ hr.solid
     height: 0px;
   }
   100% {
-    height: 12vh;
+    height: 22vh;
   }
 }
 
