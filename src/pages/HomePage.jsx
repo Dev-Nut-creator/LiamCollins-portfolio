@@ -249,7 +249,7 @@ export function GREEDYCELLS({stateProp})
 
 export function DownloadCV()
 {
-  window.open("https://drive.google.com/file/d/16OmOXDd83p9suC3v3VhLH3w_sTL7X6bN/view?usp=drive_link","_blank","noopener,noreferrer");
+  window.open("https://drive.google.com/file/d/1aIgy-BFf0oKg6QTBXS5IK9pYVwi4vAdV/view?usp=drive_link","_blank","noopener,noreferrer");
 }
 
 export function AllProjects()
